@@ -1,25 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/styles/global.css'
+import Routes from './routes';
+// JSX - Javascript com XML
+// Componentes: partes de código, geralmente funções que retornam um HTML. É útil para reaproveitar o código em outro.
+// Propriedade: São as propriedades que passamos através das páginas. Conhecidas como props
+// Estado: Sempre que precisarmos manipular um valor, uma variável, dentro de um componente, vamos precisar de um estado.
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes/>
   );
 }
 
